@@ -12,7 +12,7 @@
             <referenceName>Input:myContact</referenceName>
             <required>true</required>
         </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
         <status>Published</status>
     </templateVersions>
     <type>einstein_gpt__flex</type>
