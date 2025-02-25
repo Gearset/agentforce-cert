@@ -24,7 +24,7 @@
         <locationY>458</locationY>
         <assignmentItems>
             <assignToReference>recordCount</assignToReference>
-            <operator>Assign</operator>
+            <operator>Add</operator>
             <value>
                 <numberValue>1.0</numberValue>
             </value>
@@ -60,7 +60,7 @@
         <name>Set_Message</name>
         <label>Set Message</label>
         <locationX>176</locationX>
-        <locationY>650</locationY>
+        <locationY>758</locationY>
         <assignmentItems>
             <assignToReference>message</assignToReference>
             <operator>Assign</operator>
@@ -85,7 +85,7 @@
             <targetReference>Set_creditRecord_values</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Set_Message</targetReference>
+            <targetReference>Create_Credit_Records</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -107,6 +107,16 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Credit_Records</name>
+        <label>Create Credit Records</label>
+        <locationX>176</locationX>
+        <locationY>650</locationY>
+        <connector>
+            <targetReference>Set_Message</targetReference>
+        </connector>
+        <inputReference>creditRecords</inputReference>
+    </recordCreates>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
